@@ -1,0 +1,52 @@
+* {
+  font-family: Rubik, Roboto, Arial;
+  margin: 0px;
+  padding: 0px;
+}
+.main-container {
+  display: grid;
+  grid-template-areas:
+    "navbar"
+    "gallery"
+    "footer";
+  background-color: rgb(235, 244, 246);
+}
+.navbar {
+  grid-area: navbar;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: rgb(7, 25, 82);
+}
+.logo-marca {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  img {
+    width: 45px;
+    border-radius: 100%;
+    margin-left: 10px;
+  }
+  span {
+    color: white;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+  gap: 10px;
+}
+.burg-menu {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-right: 15px;
+}
+.gallery {
+}
+.footer {
+  background-color: rgb(8, 131, 149);
+  span {
+    color: white;
+  }
+}
