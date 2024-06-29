@@ -19,34 +19,87 @@
   align-items: center;
   height: 60px;
   background-color: rgb(7, 25, 82);
-}
-.logo-marca {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  img {
-    width: 45px;
-    border-radius: 100%;
-    margin-left: 10px;
+  .logo-marca {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    img {
+      width: 45px;
+      border-radius: 100%;
+      margin-left: 10px;
+    }
+    span {
+      color: white;
+      font-weight: 500;
+      font-size: 1.5rem;
+    }
+    gap: 10px;
   }
-  span {
-    color: white;
-    font-weight: 500;
-    font-size: 1.5rem;
-  }
-  gap: 10px;
-}
-.burg-menu {
+  .burg-menu {
     color: white;
     font-size: 2.5rem;
     font-weight: 500;
     margin-right: 15px;
+  }
 }
+
 .gallery {
+  grid-area: gallery;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .portrait-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 5px;
+    padding: 15px;
+    .gal-imagen {
+      img {
+        width: 400px;
+      }
+      margin: 5px;
+    }
+    .nombre-imagen {
+      font-weight: 700;
+    }
+    .detalle-imagen {
+      font-style: italic;
+    }
+  }
 }
+
 .footer {
+  grid-area: footer;
   background-color: rgb(8, 131, 149);
-  span {
-    color: white;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+
+  .foot-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .foot-rrss {
+      color: white;
+      font-size: 1.5rem;
+      i {
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    .foot-text {
+      margin-bottom: 15px;
+      color: white;
+    }
   }
 }
