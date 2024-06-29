@@ -7,6 +7,7 @@
   display: grid;
   grid-template-areas:
     "navbar"
+    "navmenu"
     "gallery"
     "footer";
   background-color: rgb(235, 244, 246);
@@ -14,15 +15,17 @@
 .navbar {
   grid-area: navbar;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
   height: 60px;
   background-color: rgb(7, 25, 82);
+  gap: 5px;
   .logo-marca {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 5px;
     img {
       width: 45px;
       border-radius: 100%;
@@ -35,13 +38,28 @@
     }
     gap: 10px;
   }
-  .burg-menu {
+  /*.burg-menu {
     color: white;
     font-size: 2.5rem;
     font-weight: 500;
     margin-right: 15px;
-  }
+  }*/
 }
+.nav-menu {
+    grid-area: navmenu;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+    gap: 5px;
+    background-color: rgb(8, 131, 149);
+    color: white;
+    span {
+        font-size: 1.15rem;
+      margin-left: 25px;
+    }
+  }
 
 .gallery {
   grid-area: gallery;
