@@ -46,20 +46,20 @@
   }*/
 }
 .nav-menu {
-    grid-area: navmenu;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 30px;
-    width: 100%;
-    gap: 5px;
-    background-color: rgb(8, 131, 149);
-    color: white;
-    span {
-        font-size: 1.15rem;
-      margin-left: 25px;
-    }
+  grid-area: navmenu;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 30px;
+  width: 100%;
+  gap: 5px;
+  background-color: rgb(8, 131, 149);
+  color: white;
+  span {
+    font-size: 1.15rem;
+    margin-left: 25px;
   }
+}
 
 .gallery {
   grid-area: gallery;
