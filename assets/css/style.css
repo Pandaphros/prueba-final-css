@@ -20,7 +20,7 @@
   justify-content: center;
   height: 60px;
   background-color: rgb(7, 25, 82);
-  gap: 5px;
+  gap: 10px;
   .logo-marca {
     display: flex;
     flex-direction: row;
@@ -29,9 +29,9 @@
     img {
       width: 45px;
       border-radius: 100%;
-      margin-left: 10px;
+      margin-left: 7px;
     }
-    span {
+    h1 {
       color: white;
       font-weight: 500;
       font-size: 1.5rem;
@@ -51,13 +51,19 @@
   flex-direction: row;
   align-items: center;
   height: 30px;
-  width: 100%;
-  gap: 5px;
   background-color: rgb(8, 131, 149);
-  color: white;
-  span {
-    font-size: 1.15rem;
-    margin-left: 25px;
+  margin-bottom: 15px;
+  .nav-items {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    margin-left: 5px;
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.15rem;
+    }
   }
 }
 
@@ -67,17 +73,21 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 10px;
+  width: 95%;
   .portrait-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: white;
-    margin: 5px;
     padding: 15px;
+    height: 450px;
+    width: 250px;
     .gal-imagen {
       img {
-        width: 400px;
+        height: 400px;
+        max-width: 230px;
       }
       margin: 5px;
     }
@@ -86,6 +96,7 @@
     }
     .detalle-imagen {
       font-style: italic;
+      text-align: center;
     }
   }
 }
@@ -98,7 +109,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 15px;
+  margin-top: 20px;
 
   .foot-container {
     display: flex;
@@ -119,5 +130,15 @@
       margin-bottom: 15px;
       color: white;
     }
+  }
+}
+@media (width>576px) {
+  .main-container {
+    display: grid;
+    grid-template-areas:
+      "navbar navbar"
+      "navmenu gallery"
+      "navmenu gallery"
+      "footer footer";
   }
 }
